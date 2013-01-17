@@ -1,0 +1,36 @@
+{
+  "name": "node-sdb",
+  "version": "0.0.1",
+  "description": "[WIP] CLI for SimpleDB written in Node",
+  "author": "makesites",
+  "contributors": [
+    {
+      "name": "Makis Tracend",
+      "email": "makis@makesit.es"
+    }
+  ],
+  "homepage": "http://makesites.org/sdb",
+  "keywords": [
+    "node", "express", "creative", "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/makesites/sdb"
+  },
+  "bugs": {
+    "url": "https://github.com/makesites/sdb/issues"
+  }, 
+  "licenses": [
+    {
+      "type": "MIT License",
+      "url": "http://www.makesites.org/licenses/MIT"
+    }
+  ], 
+  "main": "./index.js",
+  "engines": {
+    "node": ">0.8.x"
+  },
+  "dependencies": {
+	  "node-aws" : "*"
+  }
+}

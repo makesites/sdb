@@ -1,7 +1,7 @@
 {
   "name": "node-sdb",
-  "version": "0.0.1",
-  "description": "[WIP] CLI for SimpleDB written in Node",
+  "version": "0.0.2",
+  "description": "CLI for SimpleDB written in Node",
   "author": "makesites",
   "contributors": [
     {
@@ -11,7 +11,7 @@
   ],
   "homepage": "http://makesites.org/sdb",
   "keywords": [
-    "node", "express", "creative", "ai"
+    "node", "cli", "simpledb", "aws"
   ],
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "node": ">0.8.x"
   },
   "dependencies": {
-	  "node-aws" : "*"
+	  "aws-lib" : "0.2.x", 
+	  "commander" : "1.x"
   }
 }

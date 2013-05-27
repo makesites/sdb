@@ -26,7 +26,9 @@
       "url": "http://www.makesites.org/licenses/MIT"
     }
   ],
-  "main": "./index.js",
+  "bin": {
+    "sdb": "bin/sdb"
+  },
   "engines": {
     "node": ">0.8.x"
   },

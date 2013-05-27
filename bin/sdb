@@ -4,11 +4,12 @@
  * Module dependencies.
  */
 
-var program = require('commander');
+var program = require('commander')
+	exec = require("../lib/main");
 
 program
 	.version('0.0.1')
-	.option('-c, --config <path>', 'set config path. defaults to ~/.sdb')
+	.option('-c, --config <path>', 'set config path. defaults to /home/root/.sdb')
 	.option('-k, --key <serial>', 'set credentials key.')
 	.option('-s, --secret <serial>', 'set credentials secret.');
 
@@ -29,26 +30,4 @@ program
 
 program.parse(process.argv);
 
-
-if (!program.args.length) program.help();
-/*
-	var file = process.env['APP_DIR'] +'/data/'+date+'.json';
-
-	fs.open(file, "w", 0666, function(err, fd) {
-		if (err) throw err;
-		fs.write(fd, json, 0, "utf8", function(err, written) {
-			if (err) throw err;
-			fs.closeSync(fd);
-		});
-	});
-	// alternate method
-	fs.writeFile( file, json, function (err) {
-		if (err) throw err;
-		console.log('JSON saved!');
-	});
-
-	// setup the permisions for later read/write
-	fs.chmod( process.env['APP_DIR'] +'/data/'+date+'.json', 0777, function(err) {
-		if (err) throw err;
-	});
-*/
+exec( program );

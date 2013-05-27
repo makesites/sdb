@@ -19,19 +19,19 @@
   },
   "bugs": {
     "url": "https://github.com/makesites/sdb/issues"
-  }, 
+  },
   "licenses": [
     {
       "type": "MIT License",
       "url": "http://www.makesites.org/licenses/MIT"
     }
-  ], 
+  ],
   "main": "./index.js",
   "engines": {
     "node": ">0.8.x"
   },
   "dependencies": {
-	  "aws-lib" : "0.2.x", 
+	  "simpledb" : "0.x",
 	  "commander" : "1.x"
   }
 }

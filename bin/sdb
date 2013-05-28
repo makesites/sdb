@@ -18,11 +18,16 @@ program
 program
 	.command('read [domain]')
 	.description('Read entries from domain')
-	.option("-a, --all", "Read all")
+	.option("-a, --all", "Read all items")
+	.option("-i, --item <number>", "Output a single item by its id")
+	.option("-f, --fields <list>", "Return only certain fields")
+	.option("-l, --limit <number>", "Limit number of items returned")
+	.option("-q, --query <string>", "Output items based on conditions")
+	.option("-o, --order <field>", "Define the order of output based on a field")
 	.action(function(domain, options){
 		domain = domain || '*';
 		process.nextTick(function(){
-			exec.read( domain )
+			exec.read( domain, options )
 		});
 	})
 	.on('--help', function() {

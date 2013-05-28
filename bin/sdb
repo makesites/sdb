@@ -5,7 +5,9 @@
  */
 
 var program = require('commander')
-	exec = require("../lib/main");
+	main = require("../lib/main");
+
+var exec;
 
 program
 	.version('0.0.1')
@@ -19,8 +21,11 @@ program
 	.option("-a, --all", "Read all")
 	.action(function(domain, options){
 		domain = domain || '*';
-		console.log('read all entries in domain %s', domain);
-	}).on('--help', function() {
+		process.nextTick(function(){
+			exec.read( domain )
+		});
+	})
+	.on('--help', function() {
 		console.log('  Examples:');
 		console.log();
 		console.log('    $ read {{domain}}');
@@ -30,4 +35,4 @@ program
 
 program.parse(process.argv);
 
-exec( program );
+exec = main( program );

@@ -1,39 +1,39 @@
 {
-  "name": "node-sdb",
-  "version": "0.0.2",
-  "description": "CLI for SimpleDB written in Node",
-  "author": "makesites",
-  "contributors": [
-    {
-      "name": "Makis Tracend",
-      "email": "makis@makesit.es"
-    }
-  ],
-  "homepage": "http://makesites.org/sdb",
-  "keywords": [
-    "node", "cli", "simpledb", "aws"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/makesites/sdb"
-  },
-  "bugs": {
-    "url": "https://github.com/makesites/sdb/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT License",
-      "url": "http://www.makesites.org/licenses/MIT"
-    }
-  ],
-  "bin": {
-    "sdb": "bin/sdb"
-  },
-  "engines": {
-    "node": ">0.8.x"
-  },
-  "dependencies": {
-	  "simpledb" : "0.x",
-	  "commander" : "1.x"
-  }
+	"name": "node-sdb",
+	"version": "0.1.0",
+	"description": "CLI for SimpleDB",
+	"author": "makesites",
+	"contributors": [
+		{
+		"name": "Makis Tracend",
+		"email": "makis@makesit.es"
+		}
+	],
+	"homepage": "http://makesites.org/sdb",
+	"keywords": [
+		"node", "cli", "simpledb", "aws"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/makesites/sdb"
+	},
+	"bugs": {
+		"url": "https://github.com/makesites/sdb/issues"
+	},
+	"licenses": [
+	{
+		"type": "MIT License",
+		"url": "http://www.makesites.org/licenses/MIT"
+	}
+	],
+	"bin": {
+		"sdb": "bin/sdb"
+	},
+	"engines": {
+		"node": ">0.8.x"
+	},
+	"dependencies": {
+		"simpledb" : "0.x",
+		"commander" : "1.x"
+	}
 }

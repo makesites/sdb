@@ -16,6 +16,19 @@ program
 	.option('-s, --secret <serial>', 'Set credentials secret.')
 	.option('-r, --region <domain>', 'Set the SimpleDB region. Defaults to sdb.amazonaws.com');
 
+/* Domains */
+program
+	.command('domain [domain]')
+	.description('Read entries from domain')
+	.option("-l, --list", "List all domains")
+	.action(function(domain, options){
+		domain = domain || false;
+		process.nextTick(function(){
+			exec.domain( domain, options )
+		});
+	})
+
+/* Read */
 program
 	.command('read [domain]')
 	.description('Read entries from domain')

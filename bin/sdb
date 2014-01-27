@@ -11,7 +11,7 @@ var exec;
 
 program
 	.version('0.1.0')
-	.option('-c, --config <path>', 'Set config path. Defaults to /home/root/.sdb')
+	.option('-c, --config <path>', 'Set config path. Defaults to /root/.sdb')
 	.option('-k, --key <serial>', 'Set credentials key.')
 	.option('-s, --secret <serial>', 'Set credentials secret.')
 	.option('-r, --region <domain>', 'Set the SimpleDB region. Defaults to sdb.amazonaws.com');

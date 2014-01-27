@@ -42,7 +42,7 @@ Note that these actions need to be enabled by the user's policy in AWS for the c
 * ***-c*** or ***--config*** : Set the location of the file that contains the credentials (required)
 * ***-k*** or ***--key*** : The key to authenticate each request (required)
 * ***-s*** or ***--secret*** : The secret to authenticate each request (required)
-* ***-h*** or ***--host*** : The SimpleDB region of the domain(s) (required)
+* ***-r*** or ***--region*** : The SimpleDB region of the domain(s) (required)
 
 These are the flags you can enter for other command
 

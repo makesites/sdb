@@ -14,7 +14,7 @@ program
 	.option('-c, --config <path>', 'Set config path. Defaults to /home/root/.sdb')
 	.option('-k, --key <serial>', 'Set credentials key.')
 	.option('-s, --secret <serial>', 'Set credentials secret.')
-	.option('-h, --host <domain>', 'Set the SimpleDB region. Defaults to sdb.amazonaws.com');
+	.option('-r, --region <domain>', 'Set the SimpleDB region. Defaults to sdb.amazonaws.com');
 
 program
 	.command('read [domain]')
